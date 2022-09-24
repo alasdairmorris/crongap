@@ -71,7 +71,7 @@ Options:
   <endtime>          The end of the time window (format YYYY-MM-DDHH:mm)
 `
 
-	opts, _ := docopt.ParseArgs(usage, nil, "https://github.com/alasdairmorris/crongap v0.0.1")
+	opts, _ := docopt.ParseArgs(usage, nil, "https://github.com/alasdairmorris/crongap v1.0.0")
 
 	startTimeStr, _ := opts.String("<starttime>")
 	startTime, err := time.Parse("2006-01-0215:04", startTimeStr)
