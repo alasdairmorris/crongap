@@ -2,6 +2,11 @@
 
 A command-line tool that parses a crontab and reports all cronjobs that are due to run between the two specified timestamps.
 
+My two common use cases are:
+
+1. To determine what cron jobs were likely missed during system down time.
+2. To identify "quiet" times, when no cron jobs are running (see "--blanks").
+
 ## Installation
 
 Simply download the appropriate pre-compiled binary for your system from [the release page](https://github.com/alasdairmorris/crongap/releases).
