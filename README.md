@@ -9,35 +9,46 @@ My two common use cases are:
 
 ## Installation
 
-`crongap` will run on most Linux and Mac OS X systems.
+`crongap` will run on most Linux, MacOS and Windows systems.
 
-To install it, just find the appropriate one-liner below - based on the destination O/S and architecture - and copy-paste it into your terminal.
-
-Feel free to change the install dir - `$HOME/bin` in the examples below - to be something more appropriate for your needs.
+To install it, just `cd` into the directory in which you wish to install it and then copy-paste the appropriate one-liner from below (based on the destination O/S and architecture).
 
 ### Linux (32-bit)
 
 ```
-curl -s -L -o - https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-linux-386.tar.gz | tar -zxf - -C $HOME/bin
+curl -s -L -o crongap https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-linux-386 && chmod +x crongap
 ```
 
 ### Linux (64-bit)
 
 ```
-curl -s -L -o - https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-linux-amd64.tar.gz | tar -zxf - -C $HOME/bin
+curl -s -L -o crongap https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-linux-amd64 && chmod +x crongap
 ```
 
 ### Mac OS X (Intel)
 
 ```
-curl -s -L -o - https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-darwin-amd64.tar.gz | tar -zxf - -C $HOME/bin
+curl -s -L -o crongap https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-darwin-amd64 && chmod +x crongap
 ```
 
 ### Mac OS X (Apple Silicon)
 
 ```
-curl -s -L -o - https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-darwin-arm64.tar.gz | tar -zxf - -C $HOME/bin
+curl -s -L -o crongap https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-darwin-arm64 && chmod +x crongap
 ```
+
+### Windows (32-bit)
+
+```
+curl -s -L -o crongap.exe https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-windows-386.exe
+```
+
+### Windows (64-bit)
+
+```
+curl -s -L -o crongap.exe https://github.com/alasdairmorris/crongap/releases/latest/download/crongap-windows-amd64.exe
+```
+
 
 ### Build From Source
 
@@ -100,3 +111,7 @@ $ cat /etc/cron.d/* | crongap --blanks 2022-01-0114:00 2022-01-0114:15
 ...
 ...
 ```
+
+## License
+
+[MIT](LICENSE)
